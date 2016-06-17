@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  name: MyString
+  desc: MyText
+  type: 
+  breed: MyString
+  weight: MyString
+
+two:
+  user: two
+  name: MyString
+  desc: MyText
+  type: 
+  breed: MyString
+  weight: MyString
