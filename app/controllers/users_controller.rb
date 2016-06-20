@@ -11,4 +11,8 @@ private
  def get_user
    User.find(params.fetch(:id))
  end
+
+  def user_params
+    params.require(:user).permit(:name, :user_name, :password, :address, :cell_number, :email, :zip_code)
+  end
 end
