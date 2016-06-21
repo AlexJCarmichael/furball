@@ -13,6 +13,6 @@ private
  end
 
   def user_params
-    params.require(:user).permit(:name, :user_name, :password, :address, :cell_number, :email, :zip_code)
+    params.require(:user).permit(:name, :user_name, :password, :address, :cell_number, :email, :zip_code, :profile_image)
   end
 end
