@@ -7,6 +7,11 @@ class UsersController < ApplicationController
     render json: get_user
   end
 
+  def create
+    user = User.create!(user_params)
+    render json: user
+  end
+
 private
  def get_user
    User.find(params.fetch(:id))
