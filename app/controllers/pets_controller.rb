@@ -21,7 +21,3 @@ private
    params.require(:pet).permit(:name, :desc, :category, :breed, :weight, :user_id)
  end
 end
-
-def random_number(num = (1..100))
-  num.rand
-end
