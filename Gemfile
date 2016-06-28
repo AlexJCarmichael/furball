@@ -38,7 +38,7 @@ gem 'twilio-ruby', '~> 4.11.1'
 # gem 'mailgun-ruby', require: 'mailgun'
 gem 'refile', github: 'refile/refile', branch: 'master'
 gem 'sinatra', require: nil, github: 'sinatra/sinatra', branch: 'master'
-# gem 'refile-s3'
+gem 'refile-s3'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
