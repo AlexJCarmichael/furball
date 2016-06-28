@@ -65,12 +65,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.0.0)
-    aws-sdk (2.3.14)
-      aws-sdk-resources (= 2.3.14)
-    aws-sdk-core (2.3.14)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.3.14)
-      aws-sdk-core (= 2.3.14)
     bcrypt (3.1.11)
     builder (3.2.2)
     byebug (9.0.5)
@@ -85,10 +79,7 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    jmespath (1.2.4)
-      json_pure (>= 1.8.1)
     json (1.8.3)
-    json_pure (1.8.3)
     jsonapi (0.1.1.beta2)
       json (~> 1.8)
     jwt (1.5.4)
@@ -157,9 +148,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    refile-s3 (0.2.0)
-      aws-sdk (~> 2.0)
-      refile (~> 0.6.0)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -207,12 +195,14 @@ DEPENDENCIES
   rack-cors
   rails (>= 5.0.0.rc1, < 5.1)
   refile!
-  refile-s3
   sinatra!
   spring
   spring-watcher-listen (~> 2.0.0)
   twilio-ruby (~> 4.11.1)
   tzinfo-data
+
+RUBY VERSION
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.12.5
