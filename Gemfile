@@ -36,8 +36,8 @@ end
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'twilio-ruby', '~> 4.11.1'
 # gem 'mailgun-ruby', require: 'mailgun'
-gem 'refile', github: 'refile/refile', branch: 'master'
-gem 'sinatra', require: nil, github: 'sinatra/sinatra', branch: 'master'
+# gem 'refile', github: 'refile/refile', branch: 'master'
+# gem 'sinatra', require: nil, github: 'sinatra/sinatra', branch: 'master'
 # gem 'refile-s3'
 
 
