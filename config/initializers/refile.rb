@@ -1,10 +1,10 @@
 require "refile/s3"
 
 aws = {
-  access_key_id: "xyz",
-  secret_access_key: "abc",
-  region: "sa-east-1",
-  bucket: "my-bucket",
+  access_key_id: ENV["AWS_ACCESS"],
+  secret_access_key: ENV["AWS_SECRET"],
+  region: ENV["AWS_REGION"],
+  bucket: ENV["AWS_BUCKET"],
 }
 Refile.cache = Refile::S3.new(prefix: "cache", **aws)
 Refile.store = Refile::S3.new(prefix: "store", **aws)
