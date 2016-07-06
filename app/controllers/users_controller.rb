@@ -8,8 +8,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.create!(user_params)
-    render json: user
+    user = User.create(user_params)
+    if user
+      render json: user
+    else
+      render json: { msg: user.errors }, status: 422
+    end
   end
 
 private
