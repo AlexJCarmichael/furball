@@ -8,7 +8,7 @@ class PetsController < ApplicationController
   end
 
   def create
-    pet = Pet.create!pet_params)
+    pet = Pet.create(pet_params)
     if pet
       render json: pet
     else
