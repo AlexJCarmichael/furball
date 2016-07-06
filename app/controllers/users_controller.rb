@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
+    user.profile_image = StringIO.new(params.fetch(:user).fetch(:profile_image))
     if user.save
       render json: user
     else
