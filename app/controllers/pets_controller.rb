@@ -8,8 +8,8 @@ class PetsController < ApplicationController
   end
 
   def create
-    pet = Pet.create(pet_params)
-    if pet
+    pet = Pet.new(pet_params)
+    if pet.save
       render json: pet
     else
       render json: { msg: pet.errors }, status: 422
