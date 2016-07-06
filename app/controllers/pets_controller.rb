@@ -8,8 +8,12 @@ class PetsController < ApplicationController
   end
 
   def create
-    pet = Pet.create!(pet_params)
-    render json: pet
+    pet = Pet.create!pet_params)
+    if pet
+      render json: pet
+    else
+      render json: { msg: pet.errors }, status: 422
+    end
   end
 
 private
