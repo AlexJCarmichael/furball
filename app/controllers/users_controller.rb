@@ -1,3 +1,5 @@
+require 'base64'
+
 class UsersController < ApplicationController
   def index
     render json: User.all
@@ -9,7 +11,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
-    user.profile_image = StringIO.new(params.fetch(:user).fetch(:profile_image))
+    user.profile_image = StringIO.new(Base64.decode64(params.fetch(:user).fetch(:profile_image)))
     if user.save
       render json: user
     else
