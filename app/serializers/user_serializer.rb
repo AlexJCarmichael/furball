@@ -10,6 +10,6 @@ class UserSerializer < ActiveModel::Serializer
   has_many :pets
 
   def avatar_url
-    Refile.attachment_url(self, :profile_image, :fill, 150, 150, format: "jpg")
+    Refile.attachment_url(object, :profile_image, :fill, 150, 150, format: "jpg")
   end
 end
